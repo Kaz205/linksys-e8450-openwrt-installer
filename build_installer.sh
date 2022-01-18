@@ -236,10 +236,10 @@ linksys_e8450_installer() {
 	OPENWRT_ADD_REC_PACKAGES="wpad-openssl libustream-openssl luci luci-ssl-openssl luci-theme-openwrt-2020 kmod-mtd-rw"
 	OPENWRT_ENABLE_SERVICE="uhttpd wpad"
 
-	OPENWRT_UPG_PACKAGES="auc blockd kmod-usb-storage kmod-usb-storage-uas kmod-fs-vfat \
+	OPENWRT_UPG_PACKAGES="auc blockd irqbalance kmod-usb-storage kmod-usb-storage-uas kmod-fs-vfat \
 				kmod-nls-base kmod-nls-cp437 kmod-nls-iso8859-1 kmod-nls-utf8 \
 				kmod-fs-ext4 kmod-fs-f2fs kmod-fs-exfat \
-				luci luci-ssl-openssl luci-theme-openwrt-2020 luci-app-attendedsysupgrade \
+				luci luci-app-sqm luci-ssl-openssl luci-theme-openwrt-2020 luci-app-attendedsysupgrade \
 				-libustream-wolfssl -wpad-basic-wolfssl -px5g-wolfssl libustream-openssl wpad-openssl \
 				$OPENWRT_ADD_PACKAGES"
 
